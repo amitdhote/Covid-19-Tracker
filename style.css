@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  display: block;
+}
+
+.wordlwide {
+  background-color: rgb(233, 225, 214);
+  height: 282px;
+}
+
+.India {
+  background-color: rgb(153, 207, 189);
+  height: 282px;
+}
+
+.wordlwide,
+.India {
+  flex: 1;
+  padding: 50px 0;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  display: none;
+}
+
+.container {
+  max-width: 1150px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.world__status,
+.phil__status {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.status__item {
+  width: 20%;
+  
+}
+
+.status__item p {
+  text-transform: uppercase;
+}
+
+.confirmed {
+  color: #040407;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.deaths {
+  color: #e01111;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.recovered {
+  color: rgb(32, 192, 32);
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+@media (min-width: 650px) {
+  .world__status,
+  .phil__status {
+    justify-content: flex-start;
+  }
+
+  .image {
+    display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .row {
+    display: flex;
+  }
+}
+
+.search {
+  padding: 50px;
+  padding-top: 20px;
+ 
+}
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search form {
+  width: 100%;
+  max-width: 527px;
+}
+
+.search__container {
+  display: flex;
+  
+}
+
+.search__container input {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 10px 40px;
+  background-color: #cbcfd4;
+  outline: none;
+  height: 50px;
+}
+
+.search__container input::placeholder {
+  
+  font-size: 20px;
+}
+
+.search__container button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: rgb(201, 74, 32);
+  padding: 2px 20px;
+  color: #fff;
+  outline: none;
+  position: relative;
+  right: 1px;
+
+}
+
+.search__result {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.search__result img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .flag
+   {
+    width: 100%;
+    
+  }
+}
+.table{
+  height: 160px;
+  background-color: rgb(178, 243, 243);
+  margin-top: 50px;
+}
+.error {
+  display: block;
+  background-color: crimson;
+  color: #fff;
+  padding: 5px;
+}
+
+.loader {
+  display: block;
+  margin: 0 auto;
+  
+}
